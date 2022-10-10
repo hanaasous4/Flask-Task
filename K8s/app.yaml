@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flask-api
-        image: hanaasous1/character-occurrence-api
+        image: hanaasous1/character-occurrence-api:v1
         ports:
         - containerPort: 5000
 ---
