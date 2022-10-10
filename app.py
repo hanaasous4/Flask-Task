@@ -5,6 +5,9 @@ app = Flask(__name__)
 @app.route('/')
 def num_of_occurrence():
     input = request.args.get("arg", default="", type=str)
+    # Check if the input is empty string
+    if len(input) == 0:
+        return "Your input is empty, please provide a String"
     # Initializing dictionary (Using Characters in input String as keys and 0 as default
     # value for all keys)
     occursence = {}.fromkeys([char for char in input],0)
