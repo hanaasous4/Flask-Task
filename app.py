@@ -10,12 +10,12 @@ def num_of_occurrence():
         return "Your input is empty, please provide a String"
     # Initializing dictionary (Using Characters in input String as keys and 0 as default
     # value for all keys)
-    occursence = {}.fromkeys([char for char in input],0)
+    occurence = {}.fromkeys([char for char in input],0)
     # Iterating over characters in input string and update #of_occurrence for the current char in 
     # the dictionary by increasing the value by one
     for char in input:
-        occursence[char] += 1
-    return occursence
+        occurence[char] += 1
+    return occurence
 
 if __name__ == "__main__":
     app.run(port=5000, host= '0.0.0.0')
